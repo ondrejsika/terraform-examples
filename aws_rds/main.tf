@@ -92,7 +92,7 @@ resource "aws_db_instance" "example" {
   ]
   db_subnet_group_name = aws_db_subnet_group.example-rds.id
   publicly_accessible  = true
-  skip_final_snapshot  = false
+  skip_final_snapshot  = true
 }
 
 output "host" {
