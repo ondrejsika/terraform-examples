@@ -1,7 +1,7 @@
 locals {
   name           = "windows-example"
   location       = "westeurope"
-  size           = "Standard_B2s"
+  size           = "Standard_D2s_v3"
   admin_username = "demo"
   admin_password = "asdfasdf1234A."
 }
