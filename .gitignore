@@ -21,3 +21,6 @@
 
 # Kubernetes
 kubeconfig.yml
+
+# Local Files
+*.local.txt
