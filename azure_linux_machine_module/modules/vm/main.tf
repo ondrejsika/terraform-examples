@@ -79,9 +79,9 @@ resource "azurerm_linux_virtual_machine" "this" {
   }
 
   source_image_reference {
-    publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-focal"
-    sku       = "20_04-lts"
+    publisher = "Debian"
+    offer     = "debian-12"
+    sku       = "12"
     version   = "latest"
   }
 }
