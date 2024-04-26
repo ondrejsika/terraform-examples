@@ -68,8 +68,7 @@ ssh_pwauth: yes
 chpasswd:
   expire: false
 runcmd:
-  - |
-    curl -fsSL https://ins.oxs.cz/slu-linux-amd64.sh | sudo sh
+  - 'curl -fsSL https://raw.githubusercontent.com/sikalabs/slu/master/install.sh | sudo sh'
 EOF
   )
 
