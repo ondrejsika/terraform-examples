@@ -31,11 +31,10 @@ resource "azurerm_kubernetes_cluster" "example" {
   }
 
   network_profile {
-    network_plugin     = "azure"
-    service_cidr       = "10.43.0.0/16"
-    dns_service_ip     = "10.43.0.10"
-    docker_bridge_cidr = "10.42.0.1/16"
-    load_balancer_sku  = "standard"
+    network_plugin    = "azure"
+    service_cidr      = "10.43.0.0/16"
+    dns_service_ip    = "10.43.0.10"
+    load_balancer_sku = "standard"
   }
 }
 
