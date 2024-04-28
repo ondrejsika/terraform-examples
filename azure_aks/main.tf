@@ -1,7 +1,7 @@
 locals {
   name               = "example"
   location           = "westeurope"
-  kubernetes_version = "1.26"
+  kubernetes_version = "1.28"
   vm_size            = "Standard_B2s"
   node_count         = 1
 }
