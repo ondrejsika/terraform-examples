@@ -1,0 +1,23 @@
+# This file is maintained automatically by "terraform init".
+# Manual edits may be lost in future updates.
+
+provider "registry.terraform.io/sikalabsx/slr" {
+  version = "0.1.0"
+  hashes = [
+    "h1:InZI2ut4n3RXU72ct21Zwoyyy7BlC9xC5tToA3yO3QM=",
+    "zh:2b2b5b826931591a1c9a55b4d0521934d4453f02fc0c4c4e51839823550c0694",
+    "zh:408ac4c552b3562e76f3e71aac2cbd118251867969619724aa46a1aa61a7832f",
+    "zh:4226578feb1b67b0c25dedbf4837ce4f2c8b065ccfc3e8b8a2795731283f6d0f",
+    "zh:42c6517a2706a4153106688cb63e0c983b02afe5266f02703d280009244f8cb1",
+    "zh:61f5c47d0e51c4fe8ebad40e1ed123eea23118bf75ffd5b12ef9e8156d421013",
+    "zh:79404176010334e750a9134ec43687791cae286cfe2be123ee06b22db43ad244",
+    "zh:9576152b4b698c3815b7ceffb7d495980210e4e708198866259eae9bbf9a9f53",
+    "zh:a072c6ec572102a275097449f0b0264d929607948f9c9bbd2e95c074f3336a78",
+    "zh:b9a1ba9a84c7dbfcfaecb9ad25cf3912cbf5373e8f3b4e59e85e1ca1ef0f4288",
+    "zh:cd369366bf02b8ff6db2da1939c5b3c6a0f66bbbbf8128630faaeffdec44920a",
+    "zh:d0892b7c6317bb1dc770aac181b8ed681319f84d2e6cd265ff3a4246a03bc7f4",
+    "zh:d1b10730f192ced613e7cf18360d47c5c4bc724f01e7d4354f7eaddf5d83f430",
+    "zh:d84fd9715a7ec89cf87c239c6d4aedd56154e13d168b456c19f6df6b89783f96",
+    "zh:e5dc4773cb3a125c5ae7097e8d5aadaf44340a037ab23401931e620b4b74c75e",
+  ]
+}
