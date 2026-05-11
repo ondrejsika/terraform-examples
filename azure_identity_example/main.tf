@@ -100,3 +100,7 @@ output "keyvault_uri" {
 output "vm_principal_id" {
   value = module.vm.principal_id
 }
+
+output "ssh" {
+  value = "ssh ${local.vm_admin_username}@${module.vm.ip}"
+}
