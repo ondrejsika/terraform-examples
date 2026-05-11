@@ -14,10 +14,13 @@ chpasswd:
   expire: false
 packages:
   - jq
-runcmd:
-  - |
-    TOKEN=$(curl -sf 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://vault.azure.net' -H 'Metadata: true' | jq -r '.access_token')
-    curl -sf "https://${local.keyvault_name}.vault.azure.net/secrets/${local.secret_name}?api-version=7.4" -H "Authorization: Bearer $TOKEN" | jq -r '.value' > /tmp/secret.txt
+write_files:
+  - path: /usr/local/bin/get_secret.sh
+    permissions: '0755'
+    content: |
+      #!/bin/sh
+      TOKEN=$(curl -sf 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://vault.azure.net' -H 'Metadata: true' | jq -r '.access_token')
+      curl -sf "https://${local.keyvault_name}.vault.azure.net/secrets/${local.secret_name}?api-version=7.4" -H "Authorization: Bearer $TOKEN" | jq -r '.value'
 EOF
   )
 
